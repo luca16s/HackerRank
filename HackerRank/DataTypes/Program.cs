@@ -11,9 +11,9 @@ namespace DataTypes
     {
         private static void Main(string[] args)
         {
-            var i = 4;
-            var d = 4.0;
-            var s = "HackerRank ";
+            const int i = 4;
+            const double d = 4.0;
+            const string s = "HackerRank ";
 
             // Declare second integer, double, and String variables.
             var first = 0;
