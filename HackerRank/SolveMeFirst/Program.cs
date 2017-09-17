@@ -2,7 +2,7 @@
 
 namespace SolveMeFirst
 {
-    static class Program
+    internal static class Program
     {
         private static int SolveMeFirst(int a, int b)
         {
