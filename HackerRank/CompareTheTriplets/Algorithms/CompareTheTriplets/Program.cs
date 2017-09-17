@@ -8,8 +8,8 @@ namespace CompareTheTriplets.Algorithms.CompareTheTriplets
     {
         private static IEnumerable<int> Solve(int a0, int a1, int a2, int b0, int b1, int b2)
         {
-            var pontoA = a0 > b0 ? +1 : a1 > b1 ? +1 : a2 > b2 ? +1 : +0;
-            var pontoB = a0 < b0 ? +1 : a1 < b1 ? +1 : a2 < b2 ? +1 : +0;
+            var pontoA = (a0 > b0 ? +1 : 0) + (a1 > b1 ? +1 : 0) + (a2 > b2 ? +1 : 0);
+            var pontoB = (a0 < b0 ? +1 : 0) + (a1 < b1 ? +1 : 0) + (a2 < b2 ? +1 : 0);
 
             var total = new int[2] { pontoA, pontoB};
             return total;
