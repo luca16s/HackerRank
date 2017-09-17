@@ -4,9 +4,15 @@ namespace AVeryBigSum
 {
     static class Program
     {
-        static long AVeryBigSum(int n, long[] ar)
+        private static long AVeryBigSum(int n, long[] ar)
         {
             // Complete this function
+            long total = 0;
+            for (var i = 0; i < n; i++)
+            {
+                total = ar[i] + total;
+            }
+            return total;
         }
 
         public static void Main(string[] args)
