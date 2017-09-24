@@ -4,7 +4,7 @@ namespace Arrays
 {
     internal static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             var n = Convert.ToInt32(Console.ReadLine());
             var arrTemp = Console.ReadLine().Split(' ');
