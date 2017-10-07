@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Min-MaxSum", "Min-MaxSum\Min-MaxSum.csproj", "{D2975C40-919E-4611-82C6-433E42AD2164}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionariesAndMaps", "DictionariesAndMaps\DictionariesAndMaps.csproj", "{08B180E9-AD43-4398-A380-44DC9804B06C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DictionariesAndMaps", "DictionariesAndMaps\DictionariesAndMaps.csproj", "{08B180E9-AD43-4398-A380-44DC9804B06C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recursion.csproj", "{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +117,10 @@ Global
 		{08B180E9-AD43-4398-A380-44DC9804B06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08B180E9-AD43-4398-A380-44DC9804B06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08B180E9-AD43-4398-A380-44DC9804B06C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,6 +143,7 @@ Global
 		{5E5CD74F-2B97-4019-87EE-7DD6B477C880} = {4580EFCF-6DFB-4F56-BF4A-0C656DCC3932}
 		{D2975C40-919E-4611-82C6-433E42AD2164} = {E40276A6-E2A9-4C70-A490-7B7EEE16F6FB}
 		{08B180E9-AD43-4398-A380-44DC9804B06C} = {4580EFCF-6DFB-4F56-BF4A-0C656DCC3932}
+		{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61} = {4580EFCF-6DFB-4F56-BF4A-0C656DCC3932}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {456AEDCA-3FE6-4E4F-A66F-A39FF6D68F8B}
