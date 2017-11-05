@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{6BB5201F-C403-4DA8-94BE-154985FEB0D3}"
 EndProject
@@ -41,7 +41,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Min-MaxSum", "Min-MaxSum\Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DictionariesAndMaps", "DictionariesAndMaps\DictionariesAndMaps.csproj", "{08B180E9-AD43-4398-A380-44DC9804B06C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recursion.csproj", "{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recursion", "Recursion\Recursion.csproj", "{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryNumbers", "BinaryNumbers\BinaryNumbers.csproj", "{92F43009-A066-409B-B8D3-DBFC045131F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +123,10 @@ Global
 		{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F43009-A066-409B-B8D3-DBFC045131F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F43009-A066-409B-B8D3-DBFC045131F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F43009-A066-409B-B8D3-DBFC045131F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F43009-A066-409B-B8D3-DBFC045131F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +150,7 @@ Global
 		{D2975C40-919E-4611-82C6-433E42AD2164} = {E40276A6-E2A9-4C70-A490-7B7EEE16F6FB}
 		{08B180E9-AD43-4398-A380-44DC9804B06C} = {4580EFCF-6DFB-4F56-BF4A-0C656DCC3932}
 		{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61} = {4580EFCF-6DFB-4F56-BF4A-0C656DCC3932}
+		{92F43009-A066-409B-B8D3-DBFC045131F3} = {4580EFCF-6DFB-4F56-BF4A-0C656DCC3932}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {456AEDCA-3FE6-4E4F-A66F-A39FF6D68F8B}
