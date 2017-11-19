@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace CompareTheTriplets.Algorithms.CompareTheTriplets
 {
-    internal static partial class Program
+    internal static class Program
     {
         private static IEnumerable<int> Solve(int a0, int a1, int a2, int b0, int b1, int b2)
         {
             var pontoA = (a0 > b0 ? +1 : 0) + (a1 > b1 ? +1 : 0) + (a2 > b2 ? +1 : 0);
             var pontoB = (a0 < b0 ? +1 : 0) + (a1 < b1 ? +1 : 0) + (a2 < b2 ? +1 : 0);
 
-            var total = new int[2] { pontoA, pontoB};
+            var total = new[] {pontoA, pontoB};
             return total;
         }
 
-        private static void Main(string[] args)
+        private static void Main()
         {
             var tokensA0 = Console.ReadLine().Split(' ');
             var a0 = Convert.ToInt32(tokensA0[0]);

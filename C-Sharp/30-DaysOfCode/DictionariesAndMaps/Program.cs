@@ -18,7 +18,8 @@ namespace DictionariesAndMaps
                 Console.WriteLine(end);
                 var lenght = start - 1;
                 var total = list.Length;
-                phoneBook.Add(list.Substring(0, lenght+1), list.Substring(lenght+1, total-(lenght+1)).Replace(" ", ""));
+                phoneBook.Add(list.Substring(0, lenght + 1),
+                    list.Substring(lenght + 1, total - (lenght + 1)).Replace(" ", ""));
             }
             for (var i = 0; i < n; i++)
             {

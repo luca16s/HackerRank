@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.Linq;
 
 namespace BinaryNumbers
 {
     internal static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             var n = Convert.ToInt32(Console.ReadLine());
             var binaries = new LinkedList<int>();
@@ -18,7 +17,8 @@ namespace BinaryNumbers
             Console.ReadLine();
         }
 
-        private static Tuple<int, int, int> Binarios(int number, LinkedList<int> binaries, LinkedList<int> sequencia, int count)
+        private static Tuple<int, int, int> Binarios(int number, LinkedList<int> binaries, LinkedList<int> sequencia,
+            int count)
         {
             var divQuoc = 0;
             var maxValue = 0;

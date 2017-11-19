@@ -4,7 +4,7 @@ namespace _2DArrays
 {
     internal static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             var arr = new int[6][];
             for (var arrI = 0; arrI < 6; arrI++)

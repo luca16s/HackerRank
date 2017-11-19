@@ -10,9 +10,7 @@ namespace Arrays
             var arrTemp = Console.ReadLine().Split(' ');
             var arr = Array.ConvertAll(arrTemp, int.Parse);
             for (var i = n - 1; i > -1; i--)
-            {
                 if (arr.Length > i) Console.Write($"{arr[i]} ");
-            }
             Console.ReadLine();
         }
     }

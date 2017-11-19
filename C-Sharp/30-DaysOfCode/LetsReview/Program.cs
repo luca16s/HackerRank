@@ -20,13 +20,9 @@ namespace LetsReview
                 {
                     wordSeparated.Add(word.Substring(j, 1));
                     if (j % 2 == 0)
-                    {
                         wordOne = wordOne + wordSeparated[j];
-                    }
                     else
-                    {
                         wordTwo = wordTwo + wordSeparated[j];
-                    }
                 }
                 Console.WriteLine(wordOne + " " + wordTwo);
                 wordOne = null;

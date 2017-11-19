@@ -9,7 +9,7 @@ namespace SolveMeFirst
             return a + b;
         }
 
-        private static void Main(string[] args)
+        private static void Main()
         {
             var val1 = Convert.ToInt32(Console.ReadLine());
             var val2 = Convert.ToInt32(Console.ReadLine());

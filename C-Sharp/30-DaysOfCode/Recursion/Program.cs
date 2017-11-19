@@ -17,9 +17,7 @@ namespace Recursion
             var counter = n - 1;
             var result = n;
             if (n != 1)
-            {
                 result = Factorial(counter) * result;
-            }
             return result;
         }
     }

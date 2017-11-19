@@ -4,11 +4,11 @@ namespace IntroToConditionalStatements
 {
     internal static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             var n = Convert.ToInt32(Console.ReadLine());
 
-            if (n%2 != 0)
+            if (n % 2 != 0)
             {
                 Console.WriteLine("Weird");
             }
@@ -27,9 +27,7 @@ namespace IntroToConditionalStatements
                     else
                     {
                         if (n >= 20)
-                        {
                             Console.WriteLine("Not Weird");
-                        }
                     }
                 }
             }

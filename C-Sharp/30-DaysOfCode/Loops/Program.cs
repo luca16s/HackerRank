@@ -4,7 +4,7 @@ namespace Loops
 {
     internal static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             var n = Convert.ToInt32(Console.ReadLine());
             for (var i = 1; i < 11; i++)

@@ -4,7 +4,7 @@ namespace Operators
 {
     internal static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             double mealCost, tip, tax, totalCost, tipPercent, taxPercent;
             Console.WriteLine("Insert meal cost: ");

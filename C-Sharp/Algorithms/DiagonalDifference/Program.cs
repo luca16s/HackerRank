@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Linq;
 
 namespace DiagonalDifference
 {
     internal static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             var n = Convert.ToInt32(Console.ReadLine());
             var a = new int[n][];
@@ -18,20 +17,16 @@ namespace DiagonalDifference
             var diagonalTwo = 0;
 
             for (var i = 0; i < n; i++)
-            {
                 diagonalOne = a[i][i] + diagonalOne;
-            }
             for (var i = 0; i < n; i++)
+            for (var j = n - 1; j != -1; j--)
             {
-                for (var j = n-1; j != -1; j--)
-                {
-                    diagonalTwo = a[i][j] + diagonalTwo;
-                    i = i + 1;
-                }
+                diagonalTwo = a[i][j] + diagonalTwo;
+                i = i + 1;
             }
             //Console.WriteLine(diagonalOne);
             //Console.WriteLine(diagonalTwo);
-            Console.WriteLine(Math.Abs(diagonalOne-diagonalTwo));
+            Console.WriteLine(Math.Abs(diagonalOne - diagonalTwo));
             //Console.ReadLine();
             //  1A - 1 - 1C 00 - 02
             //  1 - 1B - 1  11 - 11
