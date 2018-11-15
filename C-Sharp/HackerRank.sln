@@ -3,49 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "30-DaysOfCode\HelloWorld\HelloWorld.csproj", "{6BB5201F-C403-4DA8-94BE-154985FEB0D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00-HelloWorld", "30-DaysOfCode\HelloWorld\00-HelloWorld.csproj", "{6BB5201F-C403-4DA8-94BE-154985FEB0D3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30DaysOfCode", "30DaysOfCode", "{4580EFCF-6DFB-4F56-BF4A-0C656DCC3932}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{E40276A6-E2A9-4C70-A490-7B7EEE16F6FB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolveMeFirst", "Algorithms\SolveMeFirst\SolveMeFirst.csproj", "{49A5FD96-DE0F-4DB0-8B00-7206EFB5C9FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-SolveMeFirst", "Algorithms\SolveMeFirst\01-SolveMeFirst.csproj", "{49A5FD96-DE0F-4DB0-8B00-7206EFB5C9FC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleArraySum", "Algorithms\SimpleArraySum\SimpleArraySum.csproj", "{7C60E008-FDB5-4EF7-9672-00FB3B98FCCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-SimpleArraySum", "Algorithms\SimpleArraySum\02-SimpleArraySum.csproj", "{7C60E008-FDB5-4EF7-9672-00FB3B98FCCC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTypes", "30-DaysOfCode\DataTypes\DataTypes.csproj", "{B06DB0A8-D7A8-4713-A9DB-AFE5A99C8B28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-DataTypes", "30-DaysOfCode\DataTypes\01-DataTypes.csproj", "{B06DB0A8-D7A8-4713-A9DB-AFE5A99C8B28}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompareTheTriplets", "Algorithms\CompareTheTriplets\CompareTheTriplets.csproj", "{58A95768-E87E-41EB-9EDB-EAB3D752644F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-CompareTheTriplets", "Algorithms\CompareTheTriplets\03-CompareTheTriplets.csproj", "{58A95768-E87E-41EB-9EDB-EAB3D752644F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AVeryBigSum", "Algorithms\AVeryBigSum\AVeryBigSum.csproj", "{6E72E7E0-CD4F-4BC7-AE01-3336A55B2457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-AVeryBigSum", "Algorithms\AVeryBigSum\04-AVeryBigSum.csproj", "{6E72E7E0-CD4F-4BC7-AE01-3336A55B2457}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiagonalDifference", "Algorithms\DiagonalDifference\DiagonalDifference.csproj", "{33306469-9594-49BD-901B-A559FAE37124}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-DiagonalDifference", "Algorithms\DiagonalDifference\05-DiagonalDifference.csproj", "{33306469-9594-49BD-901B-A559FAE37124}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlusMinus", "Algorithms\PlusMinus\PlusMinus.csproj", "{9FEC8061-F04C-427B-919B-D99AFEAB88A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-PlusMinus", "Algorithms\PlusMinus\06-PlusMinus.csproj", "{9FEC8061-F04C-427B-919B-D99AFEAB88A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Satircase", "Algorithms\Satircase\Satircase.csproj", "{1EE54D39-6528-4D30-A2BC-3035CCE62CF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-Satircase", "Algorithms\Satircase\07-Satircase.csproj", "{1EE54D39-6528-4D30-A2BC-3035CCE62CF1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operators", "30-DaysOfCode\Operators\Operators.csproj", "{4C7EF112-D1EA-4F0F-9D75-231E077A8C4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-Operators", "30-DaysOfCode\Operators\02-Operators.csproj", "{4C7EF112-D1EA-4F0F-9D75-231E077A8C4D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToConditionalStatements", "30-DaysOfCode\IntroToConditionalStatements\IntroToConditionalStatements.csproj", "{B47E8748-3574-4459-8174-CBA64F4861DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-IntroToConditionalStatements", "30-DaysOfCode\IntroToConditionalStatements\03-IntroToConditionalStatements.csproj", "{B47E8748-3574-4459-8174-CBA64F4861DF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassVsInstance", "30-DaysOfCode\ClassVsInstance\ClassVsInstance.csproj", "{D3259DC3-13B6-4ED6-AF9F-0902398948E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-ClassVsInstance", "30-DaysOfCode\ClassVsInstance\04-ClassVsInstance.csproj", "{D3259DC3-13B6-4ED6-AF9F-0902398948E8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loops", "30-DaysOfCode\Loops\Loops.csproj", "{4BB79020-B5E3-480B-821C-F78F69A130C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-Loops", "30-DaysOfCode\Loops\05-Loops.csproj", "{4BB79020-B5E3-480B-821C-F78F69A130C7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsReview", "30-DaysOfCode\LetsReview\LetsReview.csproj", "{96753838-83AE-4A51-9A99-950CBB0684EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-LetsReview", "30-DaysOfCode\LetsReview\06-LetsReview.csproj", "{96753838-83AE-4A51-9A99-950CBB0684EE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "30-DaysOfCode\Arrays\Arrays.csproj", "{5E5CD74F-2B97-4019-87EE-7DD6B477C880}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-Arrays", "30-DaysOfCode\Arrays\07-Arrays.csproj", "{5E5CD74F-2B97-4019-87EE-7DD6B477C880}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Min-MaxSum", "Algorithms\Min-MaxSum\Min-MaxSum.csproj", "{D2975C40-919E-4611-82C6-433E42AD2164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-Min-MaxSum", "Algorithms\Min-MaxSum\08-Min-MaxSum.csproj", "{D2975C40-919E-4611-82C6-433E42AD2164}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DictionariesAndMaps", "30-DaysOfCode\DictionariesAndMaps\DictionariesAndMaps.csproj", "{08B180E9-AD43-4398-A380-44DC9804B06C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-DictionariesAndMaps", "30-DaysOfCode\DictionariesAndMaps\08-DictionariesAndMaps.csproj", "{08B180E9-AD43-4398-A380-44DC9804B06C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recursion", "30-DaysOfCode\Recursion\Recursion.csproj", "{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-Recursion", "30-DaysOfCode\Recursion\09-Recursion.csproj", "{FF6DADD1-31D7-4A97-86EE-EC0C7D3FBB61}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryNumbers", "30-DaysOfCode\BinaryNumbers\BinaryNumbers.csproj", "{92F43009-A066-409B-B8D3-DBFC045131F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-BinaryNumbers", "30-DaysOfCode\BinaryNumbers\10-BinaryNumbers.csproj", "{92F43009-A066-409B-B8D3-DBFC045131F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DArrays", "30-DaysOfCode\2DArrays\2DArrays.csproj", "{814E93F6-FA9D-42A9-B1BC-D09B540F11AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-2DArrays", "30-DaysOfCode\2DArrays\11-2DArrays.csproj", "{814E93F6-FA9D-42A9-B1BC-D09B540F11AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
