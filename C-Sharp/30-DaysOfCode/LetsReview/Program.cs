@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections;
-
-namespace LetsReview
+﻿namespace LetsReview
 {
+    using System;
+    using System.Collections;
+
     internal static class Program
     {
         private static void Main()
@@ -12,11 +12,11 @@ namespace LetsReview
             quant = Convert.ToInt32(Console.ReadLine());
             string wordOne = null;
             string wordTwo = null;
-            for (var i = 0; i < quant; i++)
+            for (int i = 0; i < quant; i++)
             {
-                var word = Console.ReadLine();
+                string word = Console.ReadLine();
                 var wordSeparated = new ArrayList();
-                for (var j = 0; j < word.Length; j++)
+                for (int j = 0; j < word.Length; j++)
                 {
                     wordSeparated.Add(word.Substring(j, 1));
                     if (j % 2 == 0)

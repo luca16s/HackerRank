@@ -1,15 +1,15 @@
-﻿using System;
-
-namespace Loops
+﻿namespace Loops
 {
+    using System;
+
     internal static class Program
     {
         private static void Main()
         {
-            var n = Convert.ToInt32(Console.ReadLine());
-            for (var i = 1; i < 11; i++)
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i < 11; i++)
             {
-                var result = n * i;
+                int result = n * i;
                 Console.WriteLine($"{n} x {i} = {result}");
             }
         }

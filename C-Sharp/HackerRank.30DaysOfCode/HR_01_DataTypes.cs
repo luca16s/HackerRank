@@ -1,11 +1,11 @@
-﻿namespace DataTypes
+﻿namespace HackerRank._30DaysOfCode
 {
     using static System.Console;
     using static System.Convert;
 
-    internal static class Program
+    public class HR_01_DataTypes
     {
-        private static void Main()
+        public static void DataTypes()
         {
             const int i = 4;
             const double d = 4.0;
@@ -23,10 +23,10 @@
             WriteLine(first + i);
             // Print the sum of the double variables on a new line.
             WriteLine(string.Format("{0:0.0}", second + d));
-            // Concatenate and print the String variables on a new line
-            // The 's' variable above should be printed first.
+            // Concatenate and print the String variables on a new line The 's' variable above
+            // should be printed first.
             WriteLine(s + third);
-            ReadLine();
+            _ = ReadLine();
         }
     }
 }

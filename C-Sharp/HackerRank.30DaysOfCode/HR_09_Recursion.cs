@@ -1,15 +1,16 @@
-﻿namespace Recursion
+﻿namespace HackerRank._30DaysOfCode
 {
-    using System;
+    using static System.Console;
+    using static System.Convert;
 
-    internal static class Program
+    public class HR_09_Recursion
     {
-        private static void Main()
+        public static void Recursion()
         {
-            int n = Convert.ToInt32(Console.ReadLine());
+            int n = ToInt32(ReadLine());
             int result = Factorial(n);
-            Console.WriteLine(result);
-            Console.ReadLine();
+            WriteLine(result);
+            _ = ReadLine();
         }
 
         private static int Factorial(int n)

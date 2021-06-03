@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace SolveMeFirst
+﻿namespace SolveMeFirst
 {
+    using System;
+
     internal static class Program
     {
         private static int SolveMeFirst(int a, int b)
@@ -11,9 +11,9 @@ namespace SolveMeFirst
 
         private static void Main()
         {
-            var val1 = Convert.ToInt32(Console.ReadLine());
-            var val2 = Convert.ToInt32(Console.ReadLine());
-            var sum = SolveMeFirst(val1, val2);
+            int val1 = Convert.ToInt32(Console.ReadLine());
+            int val2 = Convert.ToInt32(Console.ReadLine());
+            int sum = SolveMeFirst(val1, val2);
             Console.WriteLine(sum);
         }
     }

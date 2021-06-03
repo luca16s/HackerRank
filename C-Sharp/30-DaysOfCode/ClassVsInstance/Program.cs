@@ -1,18 +1,18 @@
-﻿using System;
-
-namespace ClassVsInstance
+﻿namespace ClassVsInstance
 {
+    using System;
+
     internal static class Program
     {
         private static void Main()
         {
-            var T = int.Parse(Console.In.ReadLine());
-            for (var i = 0; i < T; i++)
+            int T = int.Parse(Console.In.ReadLine());
+            for (int i = 0; i < T; i++)
             {
-                var age = int.Parse(Console.In.ReadLine());
+                int age = int.Parse(Console.In.ReadLine());
                 var p = new Person(age);
                 p.AmIOld();
-                for (var j = 0; j < 3; j++)
+                for (int j = 0; j < 3; j++)
                     p.YearPasses();
                 p.AmIOld();
                 Console.WriteLine();

@@ -1,12 +1,12 @@
-﻿using System;
-
-namespace IntroToConditionalStatements
+﻿namespace IntroToConditionalStatements
 {
+    using System;
+
     internal static class Program
     {
         private static void Main()
         {
-            var n = Convert.ToInt32(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
 
             if (n % 2 != 0)
             {

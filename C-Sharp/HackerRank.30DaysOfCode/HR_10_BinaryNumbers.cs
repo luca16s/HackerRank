@@ -1,39 +1,44 @@
-﻿namespace BinaryNumbers
+﻿namespace HackerRank._30DaysOfCode
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    internal static class Program
+    using static System.Console;
+    using static System.Convert;
+
+    public class HR_10_BinaryNumbers
     {
-        private static void Main()
+        public static void BinaryNumbers()
         {
-            int n = Convert.ToInt32(Console.ReadLine());
+            int n = ToInt32(ReadLine());
             var binaries = new LinkedList<int>();
             var sequencia = new LinkedList<int>();
-            Binarios(n, binaries, sequencia, 0);
-            Console.WriteLine(Binarios(n, binaries, sequencia, 0).Item3);
+            _ = Binarios(n, binaries, sequencia, 0);
+            WriteLine(Binarios(n, binaries, sequencia, 0).Item3);
 
-            Console.ReadLine();
+            _ = ReadLine();
         }
 
-        private static Tuple<int, int, int> Binarios(int number, LinkedList<int> binaries, LinkedList<int> sequencia,
+        private static Tuple<int, int, int> Binarios(int number,
+            LinkedList<int> binaries,
+            LinkedList<int> sequencia,
             int count)
         {
             int divQuoc = 0;
             int maxValue = 0;
             while (true)
             {
-                maxValue = sequencia.Concat(new[] {maxValue}).Max();
+                maxValue = sequencia.Concat(new[] { maxValue }).Max();
 
                 if (number <= 0) return Tuple.Create(divQuoc, count, maxValue);
                 int divRest = number % 2;
-                binaries.AddFirst(divRest);
+                _ = binaries.AddFirst(divRest);
                 divQuoc = number / 2;
                 if (divRest == 1)
                 {
                     count++;
-                    sequencia.AddFirst(count);
+                    _ = sequencia.AddFirst(count);
                 }
                 else
                 {
@@ -44,5 +49,3 @@
         }
     }
 }
-//5 - 5%2 =|2|1| - 2%2 = |1|0| - 1%2 = |0|1|
-//6 - 6%2 =|3|0| - 3%2 = |1|1| - 1%2 = |0|1|

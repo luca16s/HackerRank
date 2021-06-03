@@ -1,8 +1,10 @@
-﻿namespace HelloWorld
+﻿namespace HackerRank._30DaysOfCode
 {
+    using System;
+
     using static System.Console;
 
-    internal static class Program
+    public class HR_00_HelloWorld
     {
         private static void HelloWorld()
         {
@@ -10,11 +12,6 @@
 
             WriteLine("Hello, World.");
             WriteLine(inputString);
-        }
-
-        private static void Main()
-        {
-            HelloWorld();
         }
     }
 }

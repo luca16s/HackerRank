@@ -1,13 +1,13 @@
-﻿using System;
-
-namespace Min_MaxSum
+﻿namespace Min_MaxSum
 {
+    using System;
+
     internal static class Program
     {
         private static void Main()
         {
-            var arrTemp = Console.ReadLine().Split(' ');
-            var arr = Array.ConvertAll(arrTemp, int.Parse);
+            string[] arrTemp = Console.ReadLine().Split(' ');
+            int[] arr = Array.ConvertAll(arrTemp, int.Parse);
 
             int firstSum;
             int secondSum;

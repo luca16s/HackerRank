@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Operators
+﻿namespace Operators
 {
+    using System;
+
     internal static class Program
     {
         private static void Main()

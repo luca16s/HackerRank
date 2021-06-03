@@ -1,17 +1,17 @@
-﻿using System;
-
-namespace PlusMinus
+﻿namespace PlusMinus
 {
+    using System;
+
     internal static class Program
     {
         private static void Main()
         {
-            var n = Convert.ToInt32(Console.ReadLine());
-            var arrTemp = Console.ReadLine().Split(' ');
-            var arr = Array.ConvertAll(arrTemp, int.Parse);
+            int n = Convert.ToInt32(Console.ReadLine());
+            string[] arrTemp = Console.ReadLine().Split(' ');
+            int[] arr = Array.ConvertAll(arrTemp, int.Parse);
 
             double positive = 0, negative = 0, zero = 0;
-            for (var i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 if (arr[i] > 0)
                     positive = positive + 1;
@@ -20,9 +20,9 @@ namespace PlusMinus
                 if (arr[i] == 0)
                     zero = zero + 1;
             }
-            var totalPlus = positive / n;
-            var totalMinus = negative / n;
-            var totalZero = zero / n;
+            double totalPlus = positive / n;
+            double totalMinus = negative / n;
+            double totalZero = zero / n;
             Console.WriteLine(string.Format("{0:0.000000}", totalPlus));
             Console.WriteLine(string.Format("{0:0.000000}", totalMinus));
             Console.WriteLine(string.Format("{0:0.000000}", totalZero));

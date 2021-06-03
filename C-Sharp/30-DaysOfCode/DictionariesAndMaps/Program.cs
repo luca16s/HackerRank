@@ -1,29 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace DictionariesAndMaps
+﻿namespace DictionariesAndMaps
 {
+    using System;
+    using System.Collections.Generic;
+
     internal static class Program
     {
         private static void Main()
         {
-            var n = Convert.ToInt32(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
             var phoneBook = new Dictionary<string, string>();
-            for (var i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
-                var list = Console.ReadLine();
-                var start = list.IndexOf(" ", StringComparison.Ordinal);
-                var end = list.LastIndexOf(" ", StringComparison.Ordinal);
+                string list = Console.ReadLine();
+                int start = list.IndexOf(" ", StringComparison.Ordinal);
+                int end = list.LastIndexOf(" ", StringComparison.Ordinal);
                 Console.WriteLine(start);
                 Console.WriteLine(end);
-                var lenght = start - 1;
-                var total = list.Length;
+                int lenght = start - 1;
+                int total = list.Length;
                 phoneBook.Add(list.Substring(0, lenght + 1),
                     list.Substring(lenght + 1, total - (lenght + 1)).Replace(" ", ""));
             }
-            for (var i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
-                var escolha = Console.ReadLine();
+                string escolha = Console.ReadLine();
                 Console.WriteLine(phoneBook.ContainsKey(escolha) ? escolha + "=" + phoneBook[escolha] : "Not found");
             }
             Console.ReadLine();

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "01-ArrayDS": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "OUTPUT_PATH": "1 4 3 2"
+      }
+    }
+  }
+}
