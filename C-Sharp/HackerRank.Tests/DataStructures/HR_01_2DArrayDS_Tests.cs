@@ -2,11 +2,13 @@
 {
     using FluentAssertions;
 
+    using HackerRank._30DaysOfCode;
+
     using System.Collections.Generic;
 
     using Xunit;
 
-    public class HR_01_TwoDArrayDS_Tests
+    public class HR_01_2DArrayDS_Tests
     {
         [Fact]
         public void SampleTestCaseOne()
@@ -24,7 +26,7 @@
             int expected = 19;
 
             // Test
-            int result = HR_01_TwoDArrayDS.HourglassSum(listOfLists);
+            int result = HR_01_2DDArrayDS.HourglassSum(listOfLists);
 
             // Assert
             _ = result.Should().Be(expected);
@@ -46,7 +48,7 @@
             int expected = 13;
 
             // Test
-            int result = HR_01_TwoDArrayDS.HourglassSum(listOfLists);
+            int result = HR_01_2DDArrayDS.HourglassSum(listOfLists);
 
             // Assert
             _ = result.Should().Be(expected);
@@ -68,7 +70,7 @@
             int expected = 28;
 
             // Test
-            int result = HR_01_TwoDArrayDS.HourglassSum(listOfLists);
+            int result = HR_01_2DDArrayDS.HourglassSum(listOfLists);
 
             // Assert
             _ = result.Should().Be(expected);

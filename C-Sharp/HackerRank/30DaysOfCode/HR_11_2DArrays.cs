@@ -1,9 +1,5 @@
 ﻿namespace HackerRank._30DaysOfCode
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-
     public class HR_11_2DArrays
     {
         public static int TwoDArrays(int[][] arr)

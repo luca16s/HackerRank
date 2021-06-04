@@ -1,9 +1,8 @@
 ﻿namespace HackerRank.DataStructures
 {
     using System.Collections.Generic;
-    using System.Linq;
 
-    public class HR_01_TwoDArrayDS
+    public class HR_01_2DDArrayDS
     {
         public static int HourglassSum(List<List<int>> arr)
         {
