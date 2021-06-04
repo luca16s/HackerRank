@@ -6,22 +6,16 @@
 
     public class HR_02_Operators
     {
-        public static void Operators()
+        public static string Operators(double mealCost,
+            double tipPercent,
+            double taxPercent)
         {
-            double mealCost, tip, tax, totalCost, tipPercent, taxPercent;
-            WriteLine("Insert meal cost: ");
-            mealCost = ToDouble(ReadLine());
-            WriteLine("Insert tip percent: ");
-            tipPercent = ToInt32(ReadLine());
-            WriteLine("Insert Tax Percent: ");
-            taxPercent = ToInt32(ReadLine());
+            double tip = mealCost * (tipPercent / 100);
+            double tax = mealCost * (taxPercent / 100);
 
-            tip = mealCost * (tipPercent / 100);
-            tax = mealCost * (taxPercent / 100);
+            double totalCost = Round(mealCost + tip + tax);
 
-            totalCost = Round(mealCost + tip + tax);
-            WriteLine($"The total meal cost is {totalCost} dollars.");
-            _ = ReadLine();
+            return $"The total meal cost is {totalCost} dollars.";
         }
     }
 }

@@ -1,32 +1,18 @@
 ﻿namespace HackerRank._30DaysOfCode
 {
-    using static System.Console;
-    using static System.Convert;
+    using System.Collections.Generic;
 
     public class HR_01_DataTypes
     {
-        public static void DataTypes()
+        public static IEnumerable<string> DataTypes(int first, double second, string third)
         {
             const int i = 4;
             const double d = 4.0;
             const string s = "HackerRank ";
 
-            // Declare second integer, double, and String variables.
-            int first;
-            double second;
-            // Read and save an integer, double, and String to your variables.
-            first = ToInt32(ReadLine());
-            second = ToDouble(ReadLine());
-            string third = ReadLine();
-            // Print the sum of both integer variables on a new line.
-
-            WriteLine(first + i);
-            // Print the sum of the double variables on a new line.
-            WriteLine(string.Format("{0:0.0}", second + d));
-            // Concatenate and print the String variables on a new line The 's' variable above
-            // should be printed first.
-            WriteLine(s + third);
-            _ = ReadLine();
+            yield return $"{ first + i}";
+            yield return $"{second + d:0.0}";
+            yield return s + third;
         }
     }
 }

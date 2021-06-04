@@ -1,17 +1,13 @@
 ﻿namespace HackerRank._30DaysOfCode
 {
-    using System;
-
-    using static System.Console;
+    using System.Collections.Generic;
 
     public class HR_00_HelloWorld
     {
-        private static void HelloWorld()
+        private static IEnumerable<string> HelloWorld(string inputString)
         {
-            string inputString = ReadLine();
-
-            WriteLine("Hello, World.");
-            WriteLine(inputString);
+            yield return "Hello, World.";
+            yield return inputString;
         }
     }
 }
