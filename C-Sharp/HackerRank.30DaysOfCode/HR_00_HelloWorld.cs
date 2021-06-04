@@ -4,7 +4,7 @@
 
     public class HR_00_HelloWorld
     {
-        private static IEnumerable<string> HelloWorld(string inputString)
+        public static IEnumerable<string> HelloWorld(string inputString)
         {
             yield return "Hello, World.";
             yield return inputString;

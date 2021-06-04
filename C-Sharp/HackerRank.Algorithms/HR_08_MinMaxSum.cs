@@ -1,7 +1,6 @@
 ﻿namespace HackerRank.Algorithms
 {
     using System;
-    using System.Collections;
     using System.Collections.Generic;
 
     public class HR_08_MinMaxSum
