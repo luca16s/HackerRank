@@ -4,20 +4,14 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    using static System.Console;
-    using static System.Convert;
-
     public class HR_10_BinaryNumbers
     {
-        public static void BinaryNumbers()
+        public static int BinaryNumbers(int n)
         {
-            int n = ToInt32(ReadLine());
             var binaries = new LinkedList<int>();
             var sequencia = new LinkedList<int>();
             _ = Binarios(n, binaries, sequencia, 0);
-            WriteLine(Binarios(n, binaries, sequencia, 0).Item3);
-
-            _ = ReadLine();
+            return Binarios(n, binaries, sequencia, 0).Item3;
         }
 
         private static Tuple<int, int, int> Binarios(int number,

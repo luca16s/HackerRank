@@ -3,36 +3,28 @@
     using System;
     using System.Collections.Generic;
 
-    using static System.Console;
-    using static System.Convert;
-
     public class HR_08_DictionariesAndMaps
     {
-        public static void DictionariesAndMaps()
+        public static IEnumerable<string> DictionariesAndMaps(int count,
+            string[] list,
+            string[] escolha)
         {
-            int n = ToInt32(ReadLine());
             var phoneBook = new Dictionary<string, string>();
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < count; i++)
             {
-                string list = ReadLine();
-                int start = list.IndexOf(" ", StringComparison.Ordinal);
-                int end = list.LastIndexOf(" ", StringComparison.Ordinal);
-                WriteLine(start);
-                WriteLine(end);
+                int start = list[i].IndexOf(" ", StringComparison.Ordinal);
                 int lenght = start - 1;
-                int total = list.Length;
+                int total = list[i].Length;
                 phoneBook
-                    .Add(list.Substring(0, lenght + 1),
-                    list[(lenght + 1)..total].Replace(" ", ""));
+                    .Add(list[i].Substring(0, lenght + 1),
+                    list[i][(lenght + 1)..total].Replace(" ", ""));
             }
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < count; i++)
             {
-                string escolha = ReadLine();
-                WriteLine(phoneBook.ContainsKey(escolha)
-                    ? escolha + "=" + phoneBook[escolha]
-                    : "Not found");
+                yield return phoneBook.ContainsKey(escolha[i])
+                    ? $"{escolha[i]}={phoneBook[escolha[i]]}"
+                    : "Not found";
             }
-            _ = ReadLine();
         }
     }
 }

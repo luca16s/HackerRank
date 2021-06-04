@@ -1,36 +1,28 @@
 ﻿namespace HackerRank._30DaysOfCode
 {
     using System.Collections;
-
-    using static System.Console;
-    using static System.Convert;
+    using System.Collections.Generic;
 
     public class HR_06_LetsReview
     {
-        public static void LetsReview()
+        public static IEnumerable<string> LetsReview(int quant, string[] wordList)
         {
-            int quant;
-            WriteLine("Insira a quantidade de palavras: ");
-            quant = ToInt32(ReadLine());
-            string wordOne = null;
-            string wordTwo = null;
             for (int i = 0; i < quant; i++)
             {
-                string word = ReadLine();
+                string wordOne = null;
+                string wordTwo = null;
+
                 var wordSeparated = new ArrayList();
-                for (int j = 0; j < word.Length; j++)
+                for (int j = 0; j < wordList[i].Length; j++)
                 {
-                    _ = wordSeparated.Add(word.Substring(j, 1));
+                    _ = wordSeparated.Add(wordList[i].Substring(j, 1));
                     if (j % 2 == 0)
                         wordOne += wordSeparated[j];
                     else
                         wordTwo += wordSeparated[j];
                 }
-                WriteLine(wordOne + " " + wordTwo);
-                wordOne = null;
-                wordTwo = null;
+                yield return $"{wordOne} {wordTwo}";
             }
-            _ = ReadLine();
         }
     }
 }

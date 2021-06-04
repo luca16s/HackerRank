@@ -2,19 +2,18 @@
 {
     using System;
 
-    using static System.Console;
-    using static System.Convert;
-
     public class HR_07_Arrays
     {
-        public static void ArraysMethod()
+        public static string ArraysMethod(int n, string arrTemp)
         {
-            int n = ToInt32(ReadLine());
-            string[] arrTemp = ReadLine().Split(' ');
-            int[] arr = Array.ConvertAll(arrTemp, int.Parse);
+            string result = string.Empty;
+
+            int[] arr = Array.ConvertAll(arrTemp.Split(" "), int.Parse);
             for (int i = n - 1; i > -1; i--)
-                if (arr.Length > i) Write($"{arr[i]} ");
-            _ = ReadLine();
+                if (arr.Length > i)
+                    result += $"{arr[i]} ";
+
+            return result;
         }
     }
 }

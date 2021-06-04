@@ -1,19 +1,38 @@
 ﻿namespace HackerRank._30DaysOfCode
 {
     using System;
-
-    using static System.Console;
+    using System.Collections.Generic;
+    using System.Linq;
 
     public class HR_11_2DArrays
     {
-        public static void TwoDArrays()
+        public static int TwoDArrays(int[][] arr)
         {
-            int[][] arr = new int[6][];
-            for (int arrI = 0; arrI < 6; arrI++)
+            int result = 0;
+
+            for (int linha = 0; linha < arr.Length; linha++)
             {
-                string[] arrTemp = ReadLine().Split(' ');
-                arr[arrI] = Array.ConvertAll(arrTemp, int.Parse);
+                for (int coluna = 0; coluna < arr[linha].Length - 1; coluna++)
+                {
+                    if (coluna > 3
+                    || linha > 3)
+                    {
+                        continue;
+                    }
+
+                    int sum = arr[linha][coluna]
+                        + arr[linha][coluna + 1]
+                        + arr[linha][coluna + 2]
+                        + arr[linha + 1][coluna + 1]
+                        + arr[linha + 2][coluna]
+                        + arr[linha + 2][coluna + 1]
+                        + arr[linha + 2][coluna + 2];
+
+                    if (result < sum)
+                        result = sum;
+                }
             }
+            return result;
         }
     }
 }
