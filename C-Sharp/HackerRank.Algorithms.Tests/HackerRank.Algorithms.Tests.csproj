@@ -20,4 +20,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HackerRank.Algorithms\HackerRank.Algorithms.csproj" />
+  </ItemGroup>
+
 </Project>

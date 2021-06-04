@@ -21,13 +21,13 @@
                 new List<int>{0, 0, 0, 2, 0, 0,},
                 new List<int>{0, 0, 1, 2, 4, 0,},
             };
-            int output = 19;
+            int expected = 19;
 
             // Test
             int result = HR_01_TwoDArrayDS.HourglassSum(listOfLists);
 
             // Assert
-            _ = output.Should().Be(result);
+            _ = result.Should().Be(expected);
         }
 
         [Fact]
@@ -43,13 +43,13 @@
                 new List<int>{0, 0,  0, -2,  0, 0,},
                 new List<int>{0, 0, -1, -2, -4, 0,},
             };
-            int output = 13;
+            int expected = 13;
 
             // Test
             int result = HR_01_TwoDArrayDS.HourglassSum(listOfLists);
 
             // Assert
-            _ = output.Should().Be(result);
+            _ = result.Should().Be(expected);
         }
 
         [Fact]
@@ -65,13 +65,13 @@
                 new List<int>{ 0,  0,  0, -2, 0, 0,},
                 new List<int>{ 0,  0,  1,  2, 4, 0,},
             };
-            int output = 28;
+            int expected = 28;
 
             // Test
             int result = HR_01_TwoDArrayDS.HourglassSum(listOfLists);
 
             // Assert
-            _ = output.Should().Be(result);
+            _ = result.Should().Be(expected);
         }
     }
 }

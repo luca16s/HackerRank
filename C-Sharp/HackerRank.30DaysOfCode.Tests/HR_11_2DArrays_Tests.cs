@@ -2,8 +2,6 @@
 {
     using FluentAssertions;
 
-    using System.Collections.Generic;
-
     using Xunit;
 
     public class HR_11_2DArrays_Tests
@@ -21,13 +19,13 @@
                 new int[] {0, 0, 0, 2, 0, 0,},
                 new int[] {0, 0, 1, 2, 4, 0,},
             };
-            int output = 19;
+            int expected = 19;
 
             // Test
             int result = HR_11_2DArrays.TwoDArrays(listOfLists);
 
             // Assert
-            _ = output.Should().Be(result);
+            _ = result.Should().Be(expected);
         }
     }
 }

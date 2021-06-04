@@ -1,14 +1,12 @@
 ﻿namespace HackerRank.Algorithms
 {
-    using System.Collections.Generic;
-
     public class HR_01_SimpleArraySum
     {
-        private static int SimpleArraySum(int n, IReadOnlyList<int> ar)
+        public static int SimpleArraySum(int n, int[] array)
         {
             int total = 0;
             for (int i = 0; i < n; i++)
-                total = ar[i] + total;
+                total = array[i] + total;
             return total;
         }
     }

@@ -16,6 +16,7 @@ namespace HackerRank.DataStructures.Tests
             {
                 1, 4, 3, 2
             };
+
             var reversedList = new List<int>()
             {
                 2, 3, 4, 1
@@ -25,7 +26,7 @@ namespace HackerRank.DataStructures.Tests
             List<int> reverseList = HR_00_ArrayDS.ReverseArray(listToBerReversed);
 
             // Assert
-            _ = reversedList.Should().BeEquivalentTo(reverseList);
+            _ = reverseList.Should().BeEquivalentTo(reversedList);
         }
     }
 }

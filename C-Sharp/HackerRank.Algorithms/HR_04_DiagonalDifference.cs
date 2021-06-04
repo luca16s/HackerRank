@@ -6,26 +6,26 @@
 
     public class HR_04_DiagonalDifference
     {
-        public static void DiagonalDifference(int n, string[] aTemp)
+        public static int DiagonalDifference(int n, string[][] aTemp)
         {
-            int[][] a = new int[n][];
-            for (int aI = 0; aI < n; aI++)
+            int[][] array = new int[n][];
+            for (int i = 0; i < n; i++)
             {
-                a[aI] = Array.ConvertAll(aTemp, int.Parse);
+                array[i] = Array.ConvertAll(aTemp[i], int.Parse);
             }
+
             int diagonalOne = 0;
             int diagonalTwo = 0;
 
-            for (int i = 0; i < n; i++)
-                diagonalOne = a[i][i] + diagonalOne;
-            for (int i = 0; i < n; i++)
-                for (int j = n - 1; j != -1; j--)
-                {
-                    diagonalTwo = a[i][j] + diagonalTwo;
-                    i++;
-                }
+            int coluna = array[0].Length;
+            for (int linha = 0; linha < n; linha++)
+            {
+                coluna--;
+                diagonalOne += array[linha][linha];
+                diagonalTwo += array[linha][coluna];
+            }
 
-            Console.WriteLine(Abs(diagonalOne - diagonalTwo));
+            return Abs(diagonalOne - diagonalTwo);
         }
     }
 }

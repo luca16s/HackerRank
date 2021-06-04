@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    public class HR_08_MinMaxSum
+    public class HR_07_MinMaxSum
     {
         public static IEnumerable<string> MinMaxSum(string[] arrTemp)
         {
@@ -19,27 +19,27 @@
                 && firstSum < thirdSum
                 && firstSum < fourthSum
                 && firstSum < fifthSum)
-                yield return $"{firstSum} ";
+                yield return $"{firstSum}";
             else if (secondSum < firstSum
                 && secondSum < thirdSum
                 && secondSum < fourthSum
                 && secondSum < fifthSum)
-                yield return $"{secondSum} ";
+                yield return $"{secondSum}";
             else if (thirdSum < firstSum
                 && thirdSum < secondSum
                 && thirdSum < fourthSum
                 && thirdSum < fifthSum)
-                yield return $"{secondSum} ";
+                yield return $"{secondSum}";
             else if (fourthSum < firstSum
                 && fourthSum < secondSum
                 && fourthSum < thirdSum
                 && fourthSum < fifthSum)
-                yield return $"{fourthSum} ";
+                yield return $"{fourthSum}";
             else if (fifthSum < firstSum
                 && fifthSum < secondSum
                 && fifthSum < thirdSum
                 && fifthSum < fourthSum)
-                yield return $"{fifthSum} ";
+                yield return $"{fifthSum}";
 
             if (firstSum > secondSum
                 && firstSum > thirdSum
@@ -55,7 +55,7 @@
                 && thirdSum > secondSum
                 && thirdSum > fourthSum
                 && thirdSum > fifthSum)
-                yield return $"{secondSum}";
+                yield return $"{thirdSum}";
             else if (fourthSum > firstSum
                 && fourthSum > secondSum
                 && fourthSum > thirdSum

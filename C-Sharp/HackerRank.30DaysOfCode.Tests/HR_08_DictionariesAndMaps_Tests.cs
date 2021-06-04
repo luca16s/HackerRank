@@ -42,7 +42,7 @@
                 choices);
 
             // Assert
-            _ = result.ToArray().Should().StartWith(expected);
+            _ = result.Should().StartWith(expected);
         }
     }
 }
