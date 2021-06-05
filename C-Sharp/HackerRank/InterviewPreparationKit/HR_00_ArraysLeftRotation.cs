@@ -6,15 +6,11 @@
     {
         public static List<int> RotateLeft(List<int> numbers, int rotations)
         {
-            for (int rotation = 0; rotation < rotations; rotation++)
-            {
-                int auxiliarMain = numbers[0];
-                List<int> auxList = numbers.GetRange(1, numbers.Count - 1);
-                auxList.Add(auxiliarMain);
-                numbers = auxList;
-            }
+            var auxList = new List<int>();
 
-            return numbers;
+            auxList.AddRange(numbers.GetRange(0, rotations));
+            auxList.InsertRange(0, numbers.GetRange(rotations, numbers.Count - rotations));
+            return auxList;
         }
     }
 }
