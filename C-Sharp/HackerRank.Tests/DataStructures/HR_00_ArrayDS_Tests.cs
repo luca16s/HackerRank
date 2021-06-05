@@ -9,7 +9,7 @@ namespace HackerRank.DataStructures.Tests
     public class HR_00_ArrayDS_Tests
     {
         [Fact]
-        public void SampleTestCaseOne()
+        public void SampleTestCaseZero()
         {
             // Arrange
             var listToBerReversed = new List<int>
