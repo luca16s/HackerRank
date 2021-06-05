@@ -9,14 +9,9 @@
             for (int rotation = 0; rotation < rotations; rotation++)
             {
                 int auxiliarMain = numbers[0];
-                for (int indexList = 0; indexList < numbers.Count; indexList++)
-                {
-                    if (indexList + 1 == numbers.Count)
-                        continue;
-
-                    numbers[indexList] = numbers[indexList + 1];
-                }
-                numbers[^1] = auxiliarMain;
+                List<int> auxList = numbers.GetRange(1, numbers.Count - 1);
+                auxList.Add(auxiliarMain);
+                numbers = auxList;
             }
 
             return numbers;
