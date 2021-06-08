@@ -6,7 +6,7 @@
     {
         public static int HourglassSum(List<List<int>> arr)
         {
-            int result = 0;
+            int? result = null;
             for (int linha = 0; linha < arr.Count; linha++)
             {
                 for (int coluna = 0; coluna < arr[linha].Count - 1; coluna++)
@@ -26,11 +26,21 @@
                     + arr[linha + 2][coluna + 1]
                     + arr[linha + 2][coluna + 2];
 
-                    if (result < sum)
-                        result = sum;
+                    if (sum >= 0)
+                    {
+                        if (result < sum
+                            || result == null)
+                            result = sum;
+                    }
+                    else if (sum < 0)
+                    {
+                        if (sum > result
+                            || result == null)
+                            result = sum;
+                    }
                 }
             }
-            return result;
+            return result.Value;
         }
     }
 }
